@@ -2,16 +2,16 @@
 
 **PictaMap** is an app that allows the user to search for locations using the [Foursquare API](https://developer.foursquare.com/docs) and create a pin with an image annotation.
 
-Time spent: **X** hours spent in total
+Time spent: **3** hours spent in total
 
 ## User Stories
 
 The following **required** user stories are complete:
 
-- [ ] User can view a map (+2pt)
-- [ ] User can take a photo (+1pt)
-- [ ] User can tag a location (+1pt)
-- [ ] User can drop a pin with image annotation (+1pt)
+- [x] User can view a map (+2pt)
+- [x] User can take a photo (+1pt)
+- [x] User can tag a location (+1pt)
+- [x] User can drop a pin with image annotation (+1pt)
 
 The following **stretch** user stories are implemented:
 
@@ -24,19 +24,17 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 1.
 2.
+-->
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![PictaMap Video Walkthrough](https://github.com/sks3/pictamap/blob/master/pictamap1.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
-## Notes
 
-Describe any challenges encountered while building the app.
--->
 ## License
 
 Copyright 2018 Somi Singh
