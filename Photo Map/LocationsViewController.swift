@@ -23,7 +23,7 @@ class LocationsViewController: UIViewController, UITableViewDelegate, UITableVie
   @IBOutlet weak var searchBar: UISearchBar!
   
   weak var delegate : LocationsViewControllerDelegate!
-
+  
   var results: NSArray = []
   
   override func viewDidLoad() {
@@ -62,16 +62,10 @@ class LocationsViewController: UIViewController, UITableViewDelegate, UITableVie
     let lngString = "\(lng)"
     
     print(latString + " " + lngString)
+    
+    delegate?.locationsPickedLocation(controller: self, latitude: lat, longitude: lng)
   }
   
-  func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-    let venue = results[indexPath.row] as! NSDictionary
-    let latitude = venue.value(forKey: "location.lat")
-    let longitude = venue.value(forKey: "location.lng")
-    print(latitude as Any)
-    print(longitude as Any)
-    delegate?.locationsPickedLocation(controller: self, latitude: latitude as! NSNumber, longitude: longitude as! NSNumber)
-  }
   
   func searchBar(_ searchBar: UISearchBar, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
     let newText = NSString(string: searchBar.text!).replacingCharacters(in: range, with: text)

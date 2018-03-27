@@ -45,7 +45,7 @@ class PhotoMapViewController: UIViewController, UIImagePickerControllerDelegate,
   }
   
   func locationsPickedLocation(controller: LocationsViewController, latitude: NSNumber, longitude: NSNumber) {
-
+    
     let nc = navigationController?.popToViewController(self, animated: true)
     
     let locationCoordinate = CLLocationCoordinate2D(latitude: CLLocationDegrees(latitude), longitude: CLLocationDegrees(longitude))
